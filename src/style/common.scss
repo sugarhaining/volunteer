@@ -1,0 +1,30 @@
+@import './preset.scss';
+
+@mixin flex_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin flex_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex_row_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+@mixin flex_column_reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
+$sider_theme_color:#5C7F74;
+
+$text_theme_color: #5C7F74;

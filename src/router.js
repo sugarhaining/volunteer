@@ -1,25 +1,53 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Vue from 'vue';
+import Router from 'vue-router';
+import * as Route from './utils/router-map';
 
-Vue.use(Router)
+Vue.use (Router);
 
-export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
+export default new Router ({
   routes: [
     {
       path: '/',
+      redirect: '/login',
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Route.Login,
+    },
+    {
+      path: '/home',
       name: 'home',
-      component: Home
+      component: Route.Home,
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Route.Register,
+      redirect: '/register/step1',
+      children: [
+        {path: 'step1', name: 'step1', component: Route.StepCode},
+        {path: 'step2', name: 'step2', component: Route.StepInfo},
+      ],
+    },
+    {
+      path: '/opera',
+      name: 'opera',
+      component: Route.Opera,
     },
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
-  ]
-})
+      component: Route.About,
+    },
+    /* {
+      path: '/opera',
+      name: 'opera',
+      route level code-splitting
+      this generates a separate chunk (about.[hash].js) for this route
+      which is lazy-loaded when the route is visited.
+      component: () =>
+        import (webpackChunkName: "about" './views/About.vue'),
+    }, */
+  ],
+});
