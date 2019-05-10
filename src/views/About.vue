@@ -9,13 +9,13 @@
                     </a-menu-item>
                 </a-col>
                 <a-col :span="8">
-                    <a-anchor :affix="false" >
-                      <a-anchor-link href="#service-page" title="产品服务" :wrapperStyle="wrapperStyle"/>
+                    <a-anchor :affix="false">
+                        <a-anchor-link href="#service-page" title="产品服务" :wrapperStyle="wrapperStyle" />
                     </a-anchor>
                 </a-col>
                 <a-col :span="8">
                     <!-- <a-anchor :affix="false"> -->
-                        <a href="#service-join" title="加入志愿圈" >加入志愿圈</a>
+                    <a href="#service-join" title="加入志愿圈" >加入志愿圈</a>
                     <!-- </a-anchor> -->
                 </a-col>
             </a-row>
@@ -70,10 +70,10 @@ import applyForm from '../components/apply-form.vue'
 export default {
     data() {
         return {
-            wrapperStyle:{
+            wrapperStyle: {
                 height: '100%',
                 color: 'white',
-                backgroundColor:'rgba(0,0,0,0.7)'
+                backgroundColor: 'rgba(0,0,0,0.7)'
             }
         }
     },
@@ -120,7 +120,7 @@ export default {
             }
 
             .service-desc {
-                fonr-size: 18px;
+                font-size: 18px;
                 margin-top: 150px;
             }
 
@@ -171,14 +171,16 @@ export default {
                         @include flex_column;
                         justify-content: center;
                         height: 100%;
-                        p:nth-of-type(1){
+
+                        p:nth-of-type(1) {
                             font-size: 16px;
                         }
+
                         p:nth-of-type(2) {
                             width: 200px;
                             height: 2px;
                             background-color: white;
-                            margin: 10px 0  ;
+                            margin: 10px 0;
                         }
                     }
                 }
