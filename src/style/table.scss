@@ -1,0 +1,19 @@
+.table {
+    margin-top: 50px;
+    margin-bottom: 23px;
+
+    .table-top {
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        background-color: rgba(184, 220, 219, 1);
+    }
+
+    .table-item {
+        background-color: white;
+        border-bottom: 1px solid #CCCCCC;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+}

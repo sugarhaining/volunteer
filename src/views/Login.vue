@@ -8,8 +8,8 @@
             </div>
             <nav class='menu-nav'>
                 <router-link to='/register' tag="span">注册</router-link>
-                <router-link to="/about#" tag='span'>加入志愿圈</router-link>
-                <router-link to='/about#' tag='span'>了解更多</router-link>
+                <router-link to="/about" tag='span'>加入志愿圈</router-link>
+                <router-link to='/about' tag='span'>了解更多</router-link>
             </nav>
         </nav>
     </a-layout-header>

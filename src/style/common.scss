@@ -1,4 +1,5 @@
 @import './preset.scss';
+@import './table.scss';
 
 @mixin flex_row {
     display: flex;
@@ -12,19 +13,29 @@
     align-items: center;
 }
 
-@mixin flex_row_reverse{
+@mixin flex_row_reverse {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
-@mixin flex_column_reverse{
+@mixin flex_column_reverse {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+}
+
+@mixin panel_top {
+    background-color: white;
+    padding: 19px 0;
+    font-size: 20px;
 }
 
 
 $sider_theme_color:#5C7F74;
 
 $text_theme_color: #5C7F74;
+
+$form_font_size:16px;
+
+$panel_margin_top: 43px;

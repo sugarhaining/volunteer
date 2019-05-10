@@ -35,7 +35,7 @@
         <a-row>
             <a-col :span="20" :offset="2">
                 <a-form-item :wrapper-col="{ span: 22,offset: 1 }">
-                    <a-input v-decorator="['user_phoneNumber',{...validateRules('请输入手机号码',{validator:checkPhoneNumber})}]" type="number" placeholder="请输入电话号码（输入的电话号码就是登录账号）" @focus='handlePhoneConfirmFocus'></a-input>
+                    <a-input v-decorator="['user_phoneNumber',{...validateRules('请输入手机号码',{validator:checkPhoneNumber})}]" placeholder="请输入电话号码（输入的电话号码就是登录账号）" @focus='handlePhoneConfirmFocus'></a-input>
                 </a-form-item>
             </a-col>
         </a-row>

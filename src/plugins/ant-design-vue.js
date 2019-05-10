@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import {Button, Avatar, Form, Input, Icon,Radio,Select,Divider} from 'ant-design-vue';
+import {Button, Avatar, Form, Input, Icon,Radio,Select,Divider,Menu,Anchor,Pagination} from 'ant-design-vue';
 import {LocaleProvider, Layout, Row, Col} from 'ant-design-vue';
 
 import {demandLoad} from '../utils/demandLoad';
@@ -20,6 +20,12 @@ let aComponents = [
   Radio.Button,
   Select,
   Select.Option,
+  Menu,
+  Menu.Item,
+  Menu.SubMenu,
+  Anchor,
+  Anchor.Link,
+  Pagination,
   Divider,
   Input,
   Icon,
