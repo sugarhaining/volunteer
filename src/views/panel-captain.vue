@@ -1,7 +1,7 @@
 <template>
 <a-layout class="layout">
     <a-layout-header class='layout-header'>
-        <panel-top :info='userInfo'></panel-top>
+        <panel-top :info='userInfo' @modify='modify' @logout='logout'></panel-top>
     </a-layout-header>
     <a-layout-content class="layout-content">
         <a-layout class="content-layout">
@@ -20,6 +20,9 @@
             </a-layout-content>
         </a-layout>
     </a-layout-content>
+    <a-modal title="信息提示" @ok="handleOk1" :visible="visible1" @cancel="handleCancel">
+        <p>确认要退出登陆吗</p>
+    </a-modal>
 </a-layout>
 </template>
 
@@ -33,11 +36,23 @@ export default {
                 AvatarUrl: require('../assets/icons/circle4.png'),
                 position: '决策层',
                 organization: '西电青年志愿者总队'
-            }
+            },
+            visible1:false
         }
     },
     methods:{
+        modify(){//密码修改
 
+        },
+        logout(){//退出登录
+            this.visible1=true;
+        },
+        handleOk1(){      
+      this.$router.replace({path:'/login'})
+        },
+        handleCancel(){
+            this.visible1=false;
+        }
     },
     components: {
         panelTop

@@ -7,7 +7,7 @@
                     <a-col>
                         <img src="../assets/icons/moments.png" class="logo-image">
                     </a-col>
-                    <a-col>志愿圈运营</a-col>
+                    <a-col>志愿圈运营团队</a-col>
                 </a-row>
             </a-col>
             <a-col :span="2" :offset="17">

@@ -10,7 +10,7 @@
             <p class='text'>{{info.nickName}}</p>
             <p class='text'>{{info.position}}</p>
         </div>
-        <div class='menu-list'>
+        <div class='menu-list' @click="modify">
             <a-icon type="bars" class='icon'></a-icon>
             <span>修改账号密码</span>
         </div>
@@ -33,7 +33,10 @@ export default {
   methods:{
     logOut(){
       //身份判断     运营团队   其他人两个身份
-      this.$router.push({path:'/login'})
+    this.$emit('logout')
+    },
+    modify(){
+        this.$emit('modify');
     }
   }
 }

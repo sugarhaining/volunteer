@@ -9,9 +9,9 @@
                     </a-menu-item>
                 </a-col>
                 <a-col :span="8">
-                    <a-anchor :affix="false">
-                        <a-anchor-link href="#service-page" title="产品服务" :wrapperStyle="wrapperStyle" />
-                    </a-anchor>
+                    <!-- <a-anchor :affix="false"> -->
+                        <a href="#service-page" title="产品服务" >产品服务</a>
+                    <!-- </a-anchor> -->
                 </a-col>
                 <a-col :span="8">
                     <!-- <a-anchor :affix="false"> -->
@@ -102,6 +102,9 @@ export default {
             background-color: rgba(0, 0, 0, 0.4);
             color: white;
             border: none;
+            a{
+              color: white;
+            }
         }
     }
 

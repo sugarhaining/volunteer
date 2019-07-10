@@ -12,7 +12,7 @@
                 <a-button type="danger" size="large">生成邀请码</a-button>
             </a-col>
             <a-col :span="4">
-                <a-button type="danger" size="large">禁封</a-button>
+                <a-button type="danger" size="large" @click='bannerToggle(info)'>禁封</a-button>
             </a-col>
         </a-row>
     </a-col>
@@ -27,7 +27,11 @@ export default {
 
         }
     },
-
+    methods:{
+        bannerToggle(info){
+            this.$emit('bannerToggle',info)
+        }
+    }
 }
 </script>
 

@@ -16,7 +16,7 @@
                     <a-col :span="6" :offset="2">微信</a-col>
                 </a-row>
                 <a-row class="table-item" v-for="(item,index) in data" :key="index">
-                    <a-col :span='2'>{{(index+1) < 10?`0${index+1}`:index+1}}</a-col>
+                    <a-col :span='2'>{{++index}}</a-col>
                     <a-col :span='3' :offset='1'>{{item.name}}</a-col>
                     <a-col :span='2' :offset='1'>{{item.sex}}</a-col>
                     <a-col :span='5' :offset="2">{{item.number}}</a-col>

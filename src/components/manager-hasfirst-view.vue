@@ -16,7 +16,7 @@
                     <a-col :span="8" :offset="2">印象关键词</a-col>
                 </a-row>
                 <a-row class="table-item" v-for="(item,index) in data" :key="index">
-                    <a-col :span='2'>{{(index+1) < 10?`0${index+1}`:index+1}}</a-col>
+                    <a-col :span='2'>{{++index}}</a-col>
                     <a-col :span='3' :offset='1'>{{item.name}}</a-col>
                     <a-col :span='2' :offset='2'>{{item.sex}}</a-col>
                     <a-col :span='2' :offset="2">{{item.count}}</a-col>
@@ -45,6 +45,24 @@ export default {
 }
 
 </script>
-<style lang='scss' scoped>
-  
+<style lang='scss'>
+  .table {
+    margin-top: 50px;
+    margin-bottom: 23px;
+
+    .table-top {
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        background-color: rgba(184, 220, 219, 1);
+    }
+
+    .table-item {
+        background-color: white;
+        border-bottom: 1px solid #CCCCCC;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
 </style>

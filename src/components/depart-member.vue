@@ -7,7 +7,7 @@
         </a-row>
     </a-col>
     <a-col :span="6">
-        <a-button type="danger" size='large'>创建新部门</a-button>
+        <a-button type="danger" size='large' @click="addDepart">创建新部门</a-button>
     </a-col>
 </a-row>
 </template>
@@ -20,7 +20,11 @@ export default {
 
         }
     },
-
+    methods:{
+        addDepart(){
+            this.$emit('addDepart')
+        }
+    }
 }
 </script>
 

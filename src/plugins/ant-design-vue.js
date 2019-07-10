@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import {Button, Avatar, Form, Input, Icon,Radio,Select,Divider,Menu,Anchor,Pagination} from 'ant-design-vue';
+import {Button, Avatar, Form, Input, Icon,Radio,Select,Divider,Menu,Anchor,Pagination,Notification,Modal} from 'ant-design-vue';
 import {LocaleProvider, Layout, Row, Col} from 'ant-design-vue';
 
 import {demandLoad} from '../utils/demandLoad';
@@ -26,6 +26,8 @@ let aComponents = [
   Anchor,
   Anchor.Link,
   Pagination,
+  Notification,
+  Modal,
   Divider,
   Input,
   Icon,
@@ -34,4 +36,8 @@ let aComponents = [
 ];
 
 demandLoad (Vue, aComponents);
-Vue.prototype.$form = Form;
+Vue.prototype.$form = Form; 
+Vue.prototype.$notification=Notification;
+Notification.config({
+  duration:3,
+})

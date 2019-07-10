@@ -9,7 +9,7 @@
         </a-row>
         <a-row>
             <a-col :span="4" :offset="16">
-                <a-button type="danger" :disabled="info.ifPass">{{info.ifPass?'已经同意创建志愿分舵':'同意创建志愿分舵'}}</a-button>
+                <a-button type="danger" :disabled="info.ifPass" @click='confirm(info)'>{{info.ifPass?'已经同意创建志愿分舵':'同意创建志愿分舵'}}</a-button>
             </a-col>
         </a-row>
     </a-col>
@@ -24,7 +24,11 @@ export default {
 
         }
     },
-
+    methods:{
+        confirm(info){
+            this.$emit('confirm',info)
+        }
+    }
 }
 </script>
 
