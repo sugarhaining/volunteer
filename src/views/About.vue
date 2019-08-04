@@ -57,7 +57,7 @@
         </a-row>
     </a-layout-content>
     <a-layout-footer class='layout-footer'>
-        <a-divider type="horizontal">Cyberspace@西电青年志愿者总队</a-divider>
+        <a-divider type="horizontal">Cyberspace网络技术工作室@西电青年志愿者总队</a-divider>
     </a-layout-footer>
 </a-layout>
 </template>

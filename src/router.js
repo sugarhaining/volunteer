@@ -4,6 +4,7 @@ import * as Route from './utils/router-map';
 
 Vue.use (Router);
 
+
 export default new Router ({
   routes: [
     {
@@ -79,7 +80,7 @@ export default new Router ({
     },
     {
       path:'*',
-      redirect:'/login'
+      redirect:'/login'       // 用户主动输入错误url转跳
     }
     /* {
       path: '/opera',
