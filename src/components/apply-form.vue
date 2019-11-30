@@ -58,7 +58,7 @@ export default {
         },
         checkPhoneNumber(rule, value, callback) { //电话号码验证器
             const form = this.form;
-            let phoneRule = /^1[3|4|5|7|8][0-9]{9}$/;
+            let phoneRule = /^1[3|4|7|8][0-9]{9}$/;
             if (!value) {
                 this.confirmPhoneDirty = false;
             }
