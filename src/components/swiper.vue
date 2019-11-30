@@ -1,7 +1,7 @@
 <template>
 <swiper :options="swiperOption" class='swiper'>
     <swiper-slide class='swiper-slide'>
-        <img src='../assets/images/1.jpg'>
+        <img src='https://chapaofan-picture.oss-cn-hangzhou.aliyuncs.com/img/test/1.jpg'>
         <p>
             <span class='span-title'>借助互联网技术</span>
             <span class='span-content'>整合中国高校的志愿者人际资源</span>

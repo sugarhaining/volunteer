@@ -1,0 +1,16 @@
+language: node_js
+node_js: 
+  - "12"
+
+services: 
+  - docker
+
+install: 
+  - npm install
+
+script:
+  - npm run build
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker build -t sugarhaining/volunteer:latest .
+  - docker push sugarhaining/volunteer:latest
+

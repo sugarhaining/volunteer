@@ -37,7 +37,7 @@ let aComponents = [
 
 demandLoad (Vue, aComponents);
 Vue.prototype.$form = Form; 
-Vue.prototype.$notification=Notification;
+Vue.prototype.$notification = Notification;
 Notification.config({
   duration:3,
 })
